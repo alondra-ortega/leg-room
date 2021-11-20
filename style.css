@@ -1,7 +1,11 @@
-.body{
+.html{
     background-color: blanchedalmond;
     font-family: Arial, Helvetica, sans-serif;
     margin:0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .header{
     background-color: yellowgreen;
@@ -9,7 +13,17 @@
     margin:0;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 #timer{
     right: 50px;
+}
+.startScreen{
+    background-color: yellowgreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 1rem;
+    padding: 3rem;
 }
