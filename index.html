@@ -1,35 +1,65 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Code Quiz</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Code Quiz</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="assets.js"></script>
+  <script src="script.js"></script>
 </head>
+
+<div id="controls">
+  <div id="info">
+    <button id="scores" href="">View High Scores</button>
+    <div id="timer"><p>Time: <span id="time">0</span></p></div>
+  </div>
+</div>
+  
+
+<div id="positionWrapper">
+  <section id="intro">
+    <h1>CODE QUIZ</h1>
+    <button>Start Quiz</button>
+
+  </section>
+
+  <section id="quizHolder" class="hide">
+    <p id="title"></p>
+    <!-- Buttons to click answers-->
+    <button></button>
+    <button></button>
+    <button></button>
+    <button></button>
+    <div id="scoreIndicator" class="invisible">
+      <p>&nbsp;</p>
+    </div>
+  </section>
+
+  <section id="finish" class="hide">
+    <h1>FINISH</h1>
+    <p>Your final score is&nbsp;<span id="score"></span></p>
+    <div id="records">
+      <p>Enter initials: </p><input id="initials" type="text"> <button>Submit</button>
+    </div>
+    <div id="errorIndicator" class="invisible">
+      <p>&nbsp;</p>
+    </div>
+  </section>
+
+  <section id="highScores" class="hide">
+    <h1>HIGH SCORES</h1>
+    <div>
+
+    </div>
+    <button id="reset">Go Back</button> <button id="clearScores">Clear Highscores</button>
+  </section>
+</div>
+ 
+
+
+
 <body>
-    <div class=header>
-    <button type=button class=ldrBrdBtn>Leaderboard</button>
-    <div id=timer><p>Time: <span id="time">0</span></p></div>
-    </div>
-    <!--making a header with time left and leader board -stays when user takes quiz-->
-    <br><br>
-    <div class=startScreen>
-        <h1>CODE QUIZ</h1>
-        <p>Take this code quiz to test your knowledge, every wrong answer penalizes you 10 seconds</p>
-        <button type=button>take quiz</button>
-    </div>
-    <section id=quizHolder class=hide>
-        <p id=questionHere></p>
-        <!--buttons to click answers-->
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <div id="scoreIndicator" class="invisible">
-            <p>&nbsp;</p>
-          </div>
-    </section>
-    
+  
 </body>
 </html>
