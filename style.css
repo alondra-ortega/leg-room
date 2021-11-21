@@ -16,7 +16,10 @@ html,body{
   h1 {
     font-size: 2em;
     margin: 0.67em 0;
+    color:white;
+    text-shadow: -5px 0 darkgreen, 0 5px darkgreen, 5px 0 darkgreen, 0 -5px darkgreen;
   }
+  
   hr {
     box-sizing: content-box;
     height: 0;
@@ -38,8 +41,7 @@ html,body{
   strong {
     font-weight: bolder;
   }
- 
-  
+
   small {
     font-size: 80%;
   }
@@ -72,20 +74,13 @@ html,body{
   #highScores button{
     margin:5px 0;
   }
-  #positionWrapper{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    min-height: calc(100% - 110px)
-  }
-  
   section{
     max-width: 50%;
     margin: 0 auto;
   }
   
   #controls{
-    background-color: #41275e;
+    background-color: forestgreen;
   }
   #info{
     max-width:980px;
@@ -99,30 +94,39 @@ html,body{
   }
 #scores{
     left:40px;
-    background-color: #834bc2;
+    background-color: olivedrab;
     color: white;
+    padding: 10px;
+    border: 2px solid darkgreen;
   }
   
   #timer{
     right:40px;
+    background-color: olivedrab;
+    color: white;
+    padding: 6px;
+    border: 2px solid darkgreen;
+    border-radius: 2rem;
   }
   
   #intro{
     text-align:center;
+    
   }
   
   
   button{
-    background-color:#41275e;
+    background-color:olivedrab;
     color:white;
     border: none;
     padding:5px;
     border-radius: 5px;
+    border: 2px solid darkgreen;
     cursor:pointer;
   }
   
   #intro button:hover{
-    background-color: #613a8d;
+    background-color: olive;
   }
   button,
   input,
@@ -154,7 +158,7 @@ html,body{
   }
   
   #quizHolder button{
-    background-color:#41275e;
+    border: 2px solid darkgreen;
     border-radius:5px;
     color:white;
     margin: 3px 0;
@@ -166,7 +170,7 @@ html,body{
   }
   
   #quizHolder button:hover{
-    background-color: #613a8d;
+    background-color: goldenrod;
   }
   
   #scoreIndicator, #errorIndicator{
@@ -199,7 +203,15 @@ html,body{
   @media only screen and (min-width: 768px) {
   
     #positionWrapper{
-      min-height: calc(100% - 82px)
+     
+      background-color: yellowgreen;
+      padding: 3rem;
+      border-radius: 1rem;
+      border: 2px solid darkgreen;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
     }
     #finish #records{
       display:flex;
