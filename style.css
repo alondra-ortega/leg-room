@@ -1,29 +1,221 @@
-.html{
-    background-color: blanchedalmond;
+/*making website formatted to function properly and carry a color scheme*/
+html,body{
     font-family: Arial, Helvetica, sans-serif;
-    margin:0;
-    min-height: 100vh;
+    height:100%;
+  }
+  html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    margin: 0;
+  }
+  main {
+    display: block;
+  }
+  h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+  }
+  hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible; 
+  }
+  pre {
+    font-family: monospace, monospace;
+    font-size: 1em;
+  }
+  a {
+    background-color: transparent;
+  }
+  abbr[title] {
+    border-bottom: none;
+    text-decoration: underline;
+    text-decoration: underline dotted;
+  }
+  b,
+  strong {
+    font-weight: bolder;
+  }
+ 
+  
+  small {
+    font-size: 80%;
+  }
+  sub,
+  sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+  }
+  sub {
+    bottom: -0.25em;
+  }
+  sup {
+    top: -0.5em;
+  }
+  img {
+    border-style: none;
+  }
+
+  #highScores div div{
+    padding: 5px;
+    font-weight:600;
+  }
+  
+  #highScores div div:nth-child(odd){
+    background-color:#efe6f9;
+  }
+  
+  #highScores button{
+    margin:5px 0;
+  }
+  #positionWrapper{
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.header{
-    background-color: yellowgreen;
-    padding: 1rem;
-    margin:0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-#timer{
-    right: 50px;
-}
-.startScreen{
-    background-color: yellowgreen;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    border-radius: 1rem;
-    padding: 3rem;
-}
+    justify-content: center;
+    min-height: calc(100% - 110px)
+  }
+  
+  section{
+    max-width: 50%;
+    margin: 0 auto;
+  }
+  
+  #controls{
+    background-color: #41275e;
+  }
+  #info{
+    max-width:980px;
+    margin: 0 auto;
+    color: white;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 16px 30px;
+  }
+#scores{
+    left:40px;
+    background-color: #834bc2;
+    color: white;
+  }
+  
+  #timer{
+    right:40px;
+  }
+  
+  #intro{
+    text-align:center;
+  }
+  
+  
+  button{
+    background-color:#41275e;
+    color:white;
+    border: none;
+    padding:5px;
+    border-radius: 5px;
+    cursor:pointer;
+  }
+  
+  #intro button:hover{
+    background-color: #613a8d;
+  }
+  button,
+  input,
+  optgroup,
+  select,
+  textarea {
+    font-family: inherit; /* 1 */
+    font-size: 100%; /* 1 */
+    line-height: 1.15; /* 1 */
+    margin: 0; /* 2 */
+  }
+  button,
+  input { /* 1 */
+    overflow: visible;
+  }
+  button,
+  select { /* 1 */
+    text-transform: none;
+  }
+  button,
+  [type="button"],
+  [type="reset"],
+  [type="submit"] {
+    -webkit-appearance: button;
+  }
+  
+  #quizHolder #title{
+    font-weight:700;
+  }
+  
+  #quizHolder button{
+    background-color:#41275e;
+    border-radius:5px;
+    color:white;
+    margin: 3px 0;
+    padding: 5px 5px ;
+    cursor:pointer;
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+  
+  #quizHolder button:hover{
+    background-color: #613a8d;
+  }
+  
+  #scoreIndicator, #errorIndicator{
+    border-top: 1px solid #999;
+    color: #41275e;
+    font-size: 1.3em;
+    margin: 0;
+    font-style: italic;
+    font-weight:700;
+    margin: 10px auto;
+  }
+  
+  #scoreIndicator p, #errorIndicator p{
+  margin:0;
+  margin-top:10px;
+  }
+  
+  #records input, #records button{
+  margin-top:5px;
+  }
+  .hide{
+    display:none;
+  }
+  .invisible{
+    visibility:hidden;
+  }
+  .disable{
+  pointer-events:none;
+  }
+  @media only screen and (min-width: 768px) {
+  
+    #positionWrapper{
+      min-height: calc(100% - 82px)
+    }
+    #finish #records{
+      display:flex;
+      align-items: center;
+    }
+    #finish #records input, #finish #records button{
+      margin-left:10px;
+    }
+    #info{
+      flex-direction:row;
+    }
+    #quizHolder{
+      min-width:420px;
+    }
+    #quizHolder ol{
+      min-width:100%;
+    }
+  }
+  
